@@ -1,1 +1,2 @@
-# CSharp2
+# CSharp
+Learning and reviewing C# concepts
