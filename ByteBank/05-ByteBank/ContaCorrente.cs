@@ -1,5 +1,5 @@
 ﻿
-namespace _05_ByteBank
+namespace _06_ByteBank
 {
     public class ContaCorrente
     {
