@@ -23,6 +23,8 @@ namespace ByteBank
             Console.WriteLine(carlos.Nome);
             Console.WriteLine(carlos.GetBonificacao());
 
+            Funcionario pedro = new Diretor();
+
             Diretor roberta = new Diretor();
             roberta.Nome = "Roberta";
             roberta.CPF = "454.658.148-3";
