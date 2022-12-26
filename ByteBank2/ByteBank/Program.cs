@@ -23,12 +23,18 @@ namespace ByteBank
             Console.WriteLine(carlos.Nome);
             Console.WriteLine(carlos.GetBonificacao());
 
-            Funcionario pedro = new Diretor();
+            //Funcionario pedro = new Diretor();
 
             Diretor roberta = new Diretor();
             roberta.Nome = "Roberta";
             roberta.CPF = "454.658.148-3";
             roberta.Salario = 5000;
+
+            Funcionario robertaTeste = roberta;
+
+            Console.WriteLine("Bonificação de uma referência de Diretor " + roberta.GetBonificacao());
+            Console.WriteLine("Bonificação de uma referência de Funcionario " + robertaTeste.GetBonificacao());
+
             gerenciador.Registrar(roberta);
 
             Console.WriteLine(roberta.Nome);
