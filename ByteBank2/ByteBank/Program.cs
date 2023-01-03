@@ -14,9 +14,11 @@ namespace ByteBank
         {
             GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
 
-            Funcionario carlos = new Funcionario("546.879.157-20");
+            Funcionario carlos = new Funcionario(2000, "546.879.157-20");
             carlos.Nome = "Carlos";
-            carlos.Salario = 2000;
+
+            carlos.AumentarSalario();
+            Console.WriteLine("Novo salário do Carlos " + carlos.Salario);
 
             Console.WriteLine("Total de Funcionarios: {0}", Funcionario.TotalDeFuncionarios);
 
@@ -29,8 +31,9 @@ namespace ByteBank
 
             Diretor roberta = new Diretor("454.658.148-3");
             roberta.Nome = "Roberta";
-            //roberta.CPF = "454.658.148-3";
-            roberta.Salario = 5000;
+
+            roberta.AumentarSalario();
+            Console.WriteLine("Novo salário da Roberta " + roberta.Salario);
 
             Console.WriteLine("Total de Funcionarios: {0}", Funcionario.TotalDeFuncionarios);
 
