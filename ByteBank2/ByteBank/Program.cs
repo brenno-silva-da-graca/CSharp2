@@ -14,12 +14,6 @@ namespace ByteBank
         {
             CalcularBonificacao();
 
-            //Se quisermos usar o método, sem adicionar static no CalcularBonificacao
-            /*
-            Program programa = new Program();
-            programa.CalcularBonificacao();
-            */
-
             Console.ReadLine();
         }
 
@@ -39,6 +33,10 @@ namespace ByteBank
             GerenteDeConta camila = new GerenteDeConta("326.958.628-89");
             camila.Nome = "Camila";
 
+            Desenvolvedor guilherme = new Desenvolvedor();
+            guilherme.Nome = "Guilherme";
+
+            gerenciadorBonificacao.Registrar(guilherme);
             gerenciadorBonificacao.Registrar(pedro);
             gerenciadorBonificacao.Registrar(roberta);
             gerenciadorBonificacao.Registrar(igor);
